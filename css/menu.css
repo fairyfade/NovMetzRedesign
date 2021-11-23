@@ -1,0 +1,227 @@
+/*menu formatting*/
+
+:root{
+	/*color pallet*/
+	--paleBlue: #9cbfec;
+	--lighterBlue:  #2C95E3;
+	--lightBlue: #017fdd;
+	--blue: #1d65b2;
+	--darkBlue: #004990;
+	--darkestBlue: #002b7c;
+
+	--yellow: #ffb737;
+	--lightGray: #f0f0f0;
+	/*built in white*/
+}
+
+body{
+	width: 95%;
+	margin: 0 auto;
+
+	background-color: white;
+}
+/*------------------------------------- flexbox classes -------------------------------------*/
+
+.flexRow{
+	display: flex;
+	flex-flow: row, nowrap;
+}
+
+.inlineBL{
+	display: inline-block;
+}
+
+/*----------------------------------------- header -----------------------------------------*/
+
+header{
+	position: sticky;
+	top: 0;
+	z-index: 9;
+
+	width: 100%;
+	padding: 5px;
+
+	text-align: center;
+	background-color: var(--blue);
+}
+
+#ncfLogo{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+
+	width: 172px;
+	height: 51px;
+}
+
+#date{
+	display: inline-block;
+	font-size: 25px;
+}
+
+#calendar{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+nav{
+	justify-content: space-between;
+	align-items: center;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+nav > div{
+	padding: 5px;
+	float: left;
+}
+
+#misc{
+
+}
+
+
+.drop{
+	position: relative;
+	display: inline-block;
+}
+
+.nav_icon{
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+.dropContent{
+	display: none;		/*hidden until clicked*/
+	position: absolute;
+	right: 0;
+	z-index: 8;
+
+	width: 150px;
+	padding: 10px;
+
+	border-style: solid;
+	border-color: var(--paleBlue);
+	background-color: white;
+}
+
+.drop:hover .dropContent{
+	display: block;
+}
+
+/*-------------------------------------- main content --------------------------------------*/
+#contain{
+	position: relative;
+	width: 100%;
+}
+
+#main{
+	width: 70%;			/*main column 70% width*/
+	padding: 2%;
+}
+
+.slide{
+	overflow-x: auto;	/*horizontal scrollbar only if necessary*/
+	overflow-y: hidden;	/*hide vertical scrollbar*/
+}
+
+.item{
+	position: relative;
+
+	width: 650px;
+	height: 300px;
+	margin: 20px;
+	padding: 20px;
+
+	border-radius: 25px;
+	color: white;
+	background-color: var(--lighterBlue);
+}
+
+.cals{
+	font-size: 14px;
+	color: var(--yellow);
+}
+
+.prop{
+	position: absolute;
+	top: 180px;
+	right: 20px;
+}
+
+div > img.icon, p > img.icon{
+	width: 30px;
+	height: 30px;
+}
+
+
+aside{
+	/*sidebar: station dropdown menu, diet filter menu
+	position: absolute;
+	right: 10px; */
+	width: 30%;
+	height: 90%;
+	margin: auto;
+	padding: 2%;
+
+	text-align: center;
+	align-content: center;
+}
+
+#stations{
+	width: 100%;
+	height: 20px;
+	margin: 25px;
+}
+
+#diet_menu{
+	width: 100%;
+	margin: auto;
+	padding: 5%;
+
+	border-radius: 25px;
+	background-color: var(--lightGray);
+}
+
+#diets, #allergies{
+	margin: 25px;
+	text-align: center;
+}
+
+figure{
+	display: inline-block;
+	margin: 2px;
+	padding: 0px;
+
+	text-align: center;
+	font-size: 14px;
+}
+
+#diets .button, #allergies .button{
+	width: 40px;
+	height: 40px;
+}
+
+#filter_diet .button{
+	width: 100px;
+	height: 25px;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+
+	border-radius: 15px;
+	color: white;
+	background-color: var(--darkBlue);
+}
+
+/*-------------------------------------- main content --------------------------------------*/
+footer{
+	padding: 15px;
+	background-color: var(--blue);
+}

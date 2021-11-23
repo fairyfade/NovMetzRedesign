@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Menu: Blog</title>
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+	</head>
+
+	<body>
+		<!--header-------------------------------------------------------------->
+		<header>
+
+			<div>
+				<!--NCF logo: return to metz home-->
+				<input id="ncfLogo" type="image" src="images/logos/ncf_wht.png">
+
+				<h1 id="date">Weekday 00/00</h1> <!--today's date-->
+				<img id="calendar" src="images/logos/calendar.png" />
+			</div>
+
+			<nav class="flexRow">
+				<ul id="menuSelect">
+					<!--breakfast, lunch & dinner tabs-->
+					<li><a href="breakfast.html">Breakfast</a></li>
+					<li><a href="lunch.html">Lunch</a></li>
+					<li><a href="dinner.html">Dinner</a></li>
+				</ul>
+
+				<div>
+
+					<div id="misc" class="drop">
+						<input type="image" src="" class="nav_icon">
+						<div class="dropContent">
+							<a href="#">Order Takeout</a><br/>
+							<p>Blog</p><br/>
+							<a href="#">Send Feedback</a>
+						</div>
+					</div>
+
+					<!--profile button-->
+					<div class="drop">
+						<input type="image" src="images/logos/profile_wht.png" class="nav_icon">
+
+						<!--hidden until clicked-->
+						<div id="profileDrop" class="dropContent">
+							<form id="signIn">
+								<label for="username">Username: </label>
+								<input type="text" id="username" name="username" required />
+								<br />
+								<label for="password">Password: </label>
+								<input type="password" id="password" name="password" required />
+								<button type="submit" form="form_signIn">Sign In</button>
+							</form>
+						</div>
+					</div>
+				
+					<!--settings button-->
+					<div class="drop">
+						<input type="image" src="images/logos/settings_wht.png" class="nav_icon">
+						<!--hidden until clicked-->
+						<div id="settingsDrop" class="dropContent">
+							<p>Language: <span id="lang">English</span></p>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header><!--end of header-------------------------------------->
+
+		<!--content container--------------------------------------------------->
+		<section id="contain" class="flexRow">
+			<!--main body----------------------------------------->
+			<section id="main">
+				<article>
+					<p>
+						<img src=""> <!--profile pic-->
+						<strong>Name</strong><br/>
+						<em>date</em><br/>
+						<br/>
+						aslkdjfladj
+					</p>
+				</article>
+
+				<article>
+					<p>
+						<img src=""> <!--profile pic-->
+						<strong>Name</strong><br/>
+						<em>date</em><br/>
+						<br/>
+						aslkdjfladj
+					</p>
+				</article>
+			</section>
+
+			<!--sidebar: station select menu, diet filer menu-->
+			<aside>
+
+			</aside>
+		</section><!--end of main content------------------------------->
+
+		<!--footer-------------------------------------------------------------->
+		<footer class="flexRow">
+			<div>
+				<p>
+					Fried Rice & French Fries<br />
+					NCF Class Project
+				</p>
+			</div>
+			<div></div>
+			<div></div>
+		</footer>
+
+		<script src="js/menu.js"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NCF Dining Services</title>
+    <!--link to style sheet-->
+    <link rel="stylesheet" href="metz.css" />
+  </head>
+  <!--link to javascript file-->
+  <script src="login.js"></script>
+
+  <header>
+  	<p><img src="images/newCollegeLogo.png"
+ 		alt="New College of Florida"
+ 		title="New College of Florida" />
+  	Dining Services</p>
+  </header>
+<!--top navigation bar-->
+  <div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a href="index.html">About</a>
+	  <a href="dining.html">Dining Locations</a>
+	  <a href="https://www.ncf.edu/campus-life/dining/">Meal Plans</a>
+	  <a href="foodPantry.html">Food Pantry</a>
+	  <button onclick="displayLogin()">Account</button></div>
+	</div>
+  
+  <hr>
+
+  <!--form to "log in" to account-->
+  <h2>Log Into NCF Dining Account:</h2>
+  <form name="accountForm" onsubmit="return validateForm()" method="post">
+		<p>NCF Email:
+		 <input type="text" name="username" size="30" 
+		 maxlength="30" />
+		</p>
+		<p>Password:
+			 <input type="password" name="password" size="30" 
+			 maxlength="30" />
+		</p>
+		<input type="submit" value="Submit">
+	</form>
+	<!--link to next page-->
+	<a href="account.html">Log In </a>
+	<!--footer-->
+	 	<div class="footer">
+	  	<p>Fried Rice and French Fries - NCF Class Project</p>
+	</div>
+ </html>

@@ -1,0 +1,47 @@
+Metz Redesign Resources
+	- textbooks
+	- online HTML, CSS, and javaScript
+	- images
+
+--
+
+Textbooks:
+	1. HTML & CSS by John Duckett (ISBN 9781118008188)
+	2. JavaScript & JQuery by John Duckett (ISBN 9781118531648)
+
+--
+
+HTML:
+
+CSS:
+	- Overflow: https://www.w3schools.com/css/css_overflow.asp
+	- Position: https://www.w3schools.com/css/css_positioning.asp
+	- Variables: https://www.w3schools.com/css/css3_variables.asp
+	- Flexbox: https://www.w3schools.com/css/css3_flexbox.asp
+
+javaScript:
+
+--
+
+Images:
+
+NCF & metz logos from the NCF home page
+food icons from metz's menu page
+
+Unsplash (freely-usable images)
+https://unsplash.com
+
+flatIcon (free icons & stickers)
+https://www.flaticon.com
+-----------
+Faye's Resources:
+https://www.w3schools.com/howto/howto_js_topnav.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_right2
+https://www.w3schools.com/css/css_positioning.asp
+https://www.geeksforgeeks.org/how-to-stack-elements-in-css/
+https://www.w3schools.com/cssref/pr_pos_top.as
+https://www.tutorialspoint.com/javascript/date_getday.htm
+https://www.w3schools.com/js/js_validation.asp
+https://www.w3schools.com/js/js_dates.asp
+https://www.w3schools.com/jsref/met_win_prompt.asp
+https://careerkarma.com/blog/javascript-go-to-url/

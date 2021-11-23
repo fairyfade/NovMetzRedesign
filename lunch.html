@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Menu: Lunch</title>
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+	</head>
+
+	<body>
+		<!--header-------------------------------------------------------------->
+		<header>
+
+			<div>
+				<!--NCF logo: return to metz home-->
+				<a href="index.html">
+					<img id="ncfLogo" src="images/logos/ncf_wht.png">
+				</a>
+
+				<h1 id="date">Weekday 00/00</h1> <!--today's date-->
+				<img id="calendar" src="images/logos/calendar.png" />
+			</div>
+
+			<nav class="flexRow">
+				<ul id="menuSelect">
+					<!--breakfast, lunch & dinner tabs-->
+					<li><a href="breakfast.html">Breakfast</a></li>
+					<li>Lunch</li>
+					<li><a href="dinner.html">Dinner</a></li>
+					
+				</ul>
+
+				<div>
+					<!--profile button-->
+					<div class="drop">
+						<input type="image" src="images/logos/profile_wht.png" class="nav_icon">
+						<!--hidden until clicked-->
+						<div id="profileDrop" class="dropContent">
+							<form id="signIn">
+								<label for="username">Username: </label>
+								<input type="text" id="username" name="username" required />
+								<br />
+								<label for="password">Password: </label>
+								<input type="password" id="password" name="password" required />
+								<button type="submit" form="form_signIn">Sign In</button>
+							</form>
+						</div>
+					</div>
+				
+					<!--settings button-->
+					<div class="drop">
+						<input type="image" src="images/logos/settings_wht.png" class="nav_icon">
+						<!--hidden until clicked-->
+						<div id="settingsDrop" class="dropContent">
+							<p>Language: <span id="lang">English</span></p>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header><!--end of header-------------------------------------->
+
+		<!--content container--------------------------------------------------->
+		<section id="contain" class="flexRow">
+			<!--main body----------------------------------------->
+			<section id="main">
+				<!---------Entreés--------->
+				<section>
+					<h2>Entrées</h2>
+					<div id="entrees" class="flexRow slide">
+						
+						<div id="chickenSand" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Grilled Chicken Breast Sandwich</strong><br/>
+								<span class="cals">560 Kcal</span><br/>
+
+								Contains:
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+								<img class="icon" src="images/filter_icons/treenuts.png">
+								<img class="icon" src="images/filter_icons/sesame.png">
+							</p>
+						</div>
+
+						<div id="cheesePizza" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<div class="prop"> <!--properties-->
+								<img class="icon" src="images/filter_icons/vegetarian.png">
+							</div>
+							<p>
+								<strong>Cheese Pizza</strong><br/>
+								<span class="cals">190 Kcal</span><br/>
+							
+								Contains:
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+							</p>
+						</div>
+
+						<div id="pepperoniPizza" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Pepperoni Pizza</strong><br/>
+								<span class="cals">260 Kcal</span><br/>
+
+								Contains:
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+							</p>
+						</div>
+
+						<div id="chickenPestoPizza" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Chicken Pesto Pizza</strong><br/>
+								<span class="cals">280 Kcal</span><br/>
+
+								Contains:
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+							</p>
+						</div>
+
+						<div id="hamPretzelSand" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Honey Mustard Ham & Provolone Pretzel Sandwich</strong><br/>
+								<span class="cals">280 Kcal</span><br/>
+							
+								Contains: 
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+								<img class="icon" src="images/filter_icons/mustard.png">
+							</p>
+						</div>
+
+						<div id="friedChicken" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Fried Chicken</strong><br/>
+								<span class="cals">660 Kcal</span><br/>
+
+								Contains: 
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/mustard.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+							</p>
+						</div>
+
+						<div id="macNcheese" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<p>
+								<strong>Macaroni and Cheese</strong><br/>
+								<span class="cals">230 Kcal</span><br/>
+
+								Contains: 
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+							</p>
+						</div>
+					</div>
+				</section>
+				<br/>
+
+				<!----------Sides---------->
+				<section>
+					<h2>Sides</h2>
+					<div id="sides" class="flexRow slide">
+
+						<div id="fries" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<div class="prop"> <!--properties-->
+								<img class="icon" src="images/filter_icons/vegetarian.png">
+								<img class="icon" src="images/filter_icons/vegan.png">
+								<img class="icon" src="images/filter_icons/glutenfree.png">
+							</div>
+							<p>
+								<strong>Straight Cut French Fries</strong><br/>
+								<span class="cals">420 Kcal</span><br/>
+
+								Contains: 
+								<img class="icon" src="images/filter_icons/soya.png">
+							</p>
+						</div>
+
+						<div id="mozzarellaSticks" class="item">
+							<img src="images/waffles.jpg" 
+								alt="a picture of a waffle"
+								title="waffles" 
+							/>
+							<div class="prop"> <!--properties-->
+								<img class="icon" src="images/filter_icons/vegetarian.png">
+							</div>
+							<p>
+								<strong>Mozzarella Sticks<br/> with Marinara</strong><br/>
+								<span class="cals">560 Kcal</span><br/>
+
+								Contains: 
+								<img class="icon" src="images/filter_icons/gluten.png">
+								<img class="icon" src="images/filter_icons/eggs.png">
+								<img class="icon" src="images/filter_icons/milk.png">
+								<img class="icon" src="images/filter_icons/soya.png">
+							</p>
+						</div>
+					</div>
+					<br/>
+				</section>
+			</section>
+
+			<!--sidebar: station select menu, diet filer menu-->
+			<aside>
+
+				<p>
+					Lunch Hours:<br/>
+					11:00 AM - 2:00 PM
+				</p>
+
+				<!--station select dropdown: (currently) purely aesthetic-->
+				<select id="stations" name="stations">
+					<option value="all">All Stations</option>
+					<option value="daybreaker">Daybreaker</option>
+					<option value="marketSteet">Market Street Deli</option>
+					<option value="mainPlate">Main Plate</option>
+					<option value="liveWell">Live Well</option>
+					<option value="villaToscana">Villa Toscana</option>
+					<option value="jclarkGrille">J Clark Grille</option>
+					<option value="asianBar">Asian Inspired Bar</option>
+					<option value="greenScene">Green Scene</option>
+					<option value="dujour">Dujour</option>
+				</select>
+
+				<!--dietary restrictions menu-->
+				<div id="diet_menu">
+
+					<!--diet filters-->
+					<div id="diets">
+						<h3>Diets</h3>
+
+						<figure>
+							<!--vegetarian-->
+							<input id="vegetarian" class="button"
+							type="image" src="images/filter_icons/vegetarian.png">
+							<figcaption>Vegetarian</figcaption>
+						</figure>
+
+						<figure>
+							<!--vegan-->
+							<input id="vegan" class="button" 
+							type="image" src="images/filter_icons/vegan.png">
+							<figcaption>Vegan</figcaption>
+						</figure>
+
+						<figure>
+							<!--halal-->
+							<input id="halal" class="button" 
+							type="image" src="images/filter_icons/halal.png">
+							<figcaption>Halal</figcaption>
+						</figure>
+
+						<figure>
+							<!--gluten free-->
+							<input id="glutenfree" class="button" 
+							type="image" src="images/filter_icons/glutenfree.png">
+							<figcaption>Gluten Free</figcaption>
+						</figure>
+
+						<figure>
+							<!--kosher-->
+							<input id="kosher" class="button" 
+							type="image" src="images/filter_icons/kosher.png">
+							<figcaption>Kosher</figcaption>
+						</figure>
+					</div>
+
+					<!--allergy filters-->
+					<div id="allergies">
+						<h3>Allergies</h3>
+
+						<figure>
+							<!--gluten-->
+							<input id="gluten" class="button" 
+							type="image" src="images/filter_icons/gluten.png">
+							<figcaption>Gluten</figcaption>
+						</figure>
+
+						<figure>
+							<!--tree nuts-->
+							<input id="treenuts" class="button" 
+							type="image" src="images/filter_icons/treenuts.png">
+							<figcaption>Tree Nuts</figcaption>
+						</figure>
+
+						<figure>
+							<!--peanuts-->
+							<input id="peanuts" class="button" 
+							type="image" src="images/filter_icons/peanuts.png">
+							<figcaption>Peanuts</figcaption>
+						</figure>
+
+						<figure>
+							<!--celery-->
+							<input id="celery" class="button" 
+							type="image" src="images/filter_icons/celery.png">
+							<figcaption>Celery</figcaption>
+						</figure>
+
+						<figure>
+							<!--mustard-->
+							<input id="mustard" class="button" 
+							type="image" src="images/filter_icons/mustard.png">
+							<figcaption>Mustard</figcaption>
+						</figure>
+
+						<figure>
+							<!--eggs-->
+							<input id="eggs" class="button" 
+							type="image" src="images/filter_icons/eggs.png">
+							<figcaption>Eggs</figcaption>
+						</figure>
+
+
+						<figure>
+							<!--milk-->
+							<input id="milk" class="button" 
+							type="image" src="images/filter_icons/milk.png">
+							<figcaption>Milk</figcaption>
+						</figure>
+
+						<figure>
+							<!--sesame-->
+							<input id="sesame" class="button" 
+							type="image" src="images/filter_icons/sesame.png">
+							<figcaption>Sesame</figcaption>
+						</figure>
+
+						<figure>
+							<!--fish-->
+							<input id="fish" class="button" 
+							type="image" src="images/filter_icons/fish.png">
+							<figcaption>Fish</figcaption>
+						</figure>
+
+						<figure>
+							<!--crustaceans-->
+							<input id="crustaceans" class="button" 
+							type="image" src="images/filter_icons/crustaceans.png">
+							<figcaption>Crustaceans</figcaption>
+						</figure>
+
+
+						<figure>
+							<!--molluscs-->
+							<input id="molluscs" class="button" 
+							type="image" src="images/filter_icons/molluscs.png">
+							<figcaption>Molluscs</figcaption>
+						</figure>
+
+						<figure>
+							<!--soya-->
+							<input id="soya" class="button" 
+							type="image" src="images/filter_icons/soya.png">
+							<figcaption>Soya</figcaption>
+						</figure>
+
+						<figure>
+							<!--sulphites-->
+							<input id="sulphites" class="button" 
+							type="image" src="images/filter_icons/sulphites.png">
+							<figcaption>Sulphites</figcaption>
+						</figure>
+
+						<figure>
+							<!--lupin-->
+							<input id="lupin" class="button" 
+							type="image" src="images/filter_icons/lupin.png">
+							<figcaption>Lupin</figcaption>
+						</figure>
+					</div>
+
+					<div id="filter_diet" class="flexRow">
+						<button id="filter" type="button" class="button">Filter</button>
+						<button id="clear" type="button" class="button">Clear</button>
+					</div>
+					
+				</div>
+			</aside>
+		</section><!--end of main content------------------------------->
+
+		<!--footer-------------------------------------------------------------->
+		<footer class="flexRow">
+			<div>
+				<p>
+					Fried Rice & French Fries<br />
+					NCF Class Project
+				</p>
+			</div>
+			<div></div>
+			<div></div>
+		</footer>
+
+		<script src="js/menu.js"></script>
+	</body>
+</html>
